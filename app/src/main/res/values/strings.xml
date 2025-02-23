@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LifeSync</string>
+    <string name="myname">Mariana Lizeth Marin Rojas</string>
+    <string name="starts">Comienza</string>
+    <string name="register">Regístrate</string>
+    <string name="enter">Ingresar</string>
+    <string name="recoverPassword">Recupera Tu Contraseña</string>
+    <string name="description">Inicia una nueva aventura con LifeSync y descubre una nueva forma de ver el mundo</string>
+    <string name="login">La aventura está por iniciar, por favor inicia sesión</string>
+    <string name="enterGoogle">Ingresa con Google</string>
+    <string name="noAccount">No tienes cuenta?</string>
+</resources>
