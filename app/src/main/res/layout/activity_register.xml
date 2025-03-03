@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="107dp"
+            android:layout_height="106dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_appNombre"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="@string/message"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_names"
+            style="@style/EditTextRounded"
+            android:layout_width="349dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/names"
+            android:textColor="#BDBCBC" />
+
+        <EditText
+            android:id="@+id/et_surnames"
+            style="@style/EditTextRounded"
+            android:layout_width="349dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/surnames"
+            android:textColor="#BDBCBC"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            style="@style/EditTextRounded"
+            android:layout_width="349dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:text="@string/email"
+            android:textColor="#BDBCBC"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/EditTextRounded"
+            android:layout_width="349dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:text="@string/phone"
+            android:textColor="#BDBCBC"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/EditTextRounded"
+            android:layout_width="349dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:text="@string/password"
+            android:textColor="#BDBCBC"/>
+
+        <EditText
+            android:id="@+id/et_confirmPassword"
+            style="@style/EditTextRounded"
+            android:layout_width="349dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:text="@string/confirmPassword"
+            android:textColor="#BDBCBC"/>
+
+        <CheckBox
+            android:id="@+id/cb_tyc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tyc"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:buttonTint="@color/turquoise"/>
+
+
+        <Button
+            android:id="@+id/bt_ingresar"
+            android:layout_width="209dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="@color/turquoise"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textSize="24dp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_contraseña"
+            app:strokeColor="@color/blue"
+            app:strokeWidth="3dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="@string/account"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="@string/login2"
+                android:fontFamily="serif"
+                android:textColor="@color/turquoise"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
