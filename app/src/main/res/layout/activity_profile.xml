@@ -49,7 +49,6 @@
         android:layout_marginTop="40dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Mariana Lizeth"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b_editProfile" />
@@ -62,7 +61,6 @@
         android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Marin Rojas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_names" />
@@ -75,7 +73,6 @@
         android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="text"
-        android:text="123456789"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_surnames" />
@@ -88,7 +85,6 @@
         android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="text"
-        android:text="marianamarin123@gmail.com"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_phone" />
@@ -133,6 +129,21 @@
         app:layout_constraintBottom_toBottomOf="@+id/et_email"
         app:layout_constraintEnd_toEndOf="@+id/et_email"
         app:srcCompat="@drawable/ic_email" />
+
+    <TextView
+        android:id="@+id/tv_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="serif"
+        android:text="@string/Return"
+        android:textColor="@color/turquoise"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

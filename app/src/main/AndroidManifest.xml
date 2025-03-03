@@ -36,7 +36,11 @@
 
         <activity
             android:name=".RecoverPasswordActivity"
-            android:exported="true">
+            android:exported="false">
+        </activity>
+
+        <activity android:name=".ProfileActivity"
+            android:exported="false">
         </activity>
 
         <meta-data

@@ -22,4 +22,5 @@
     <string name="instructions">Enviar instrucciones</string>
     <string name="editProfile">Editar perfil</string>
     <string name="tyc">Acepto los términos y condiciones</string>
+    <string name="Return">Regresar</string>
 </resources>
