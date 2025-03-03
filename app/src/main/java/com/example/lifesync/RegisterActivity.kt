@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.util.Log
+import android.widget.CheckBox
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +21,7 @@ class RegisterActivity : AppCompatActivity(){
     private lateinit var editTextRcontrasena: EditText
     private lateinit var buttonRegistro : Button
     private lateinit var textLogin : TextView
+    private lateinit var checkBoxTyc: CheckBox
 
     private lateinit var sharedPreferences : SharedPreferences
 
@@ -37,6 +39,7 @@ class RegisterActivity : AppCompatActivity(){
         editTextRcontrasena = findViewById(R.id.et_confirmPassword)
         buttonRegistro = findViewById(R.id.bt_ingresar)
         textLogin = findViewById(R.id.tv_login)
+        checkBoxTyc = findViewById(R.id.cb_tyc)
 
         //Archivo de almacenamiento local
 
@@ -108,6 +111,11 @@ class RegisterActivity : AppCompatActivity(){
             return false
         } else if (contrasena != rcontrasena) {
             Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show()
+            return false
+        }
+
+        if (!checkBoxTyc.isChecked) {
+            Toast.makeText(this, "Debes aceptar los términos y condiciones", Toast.LENGTH_SHORT).show()
             return false
         }
 
