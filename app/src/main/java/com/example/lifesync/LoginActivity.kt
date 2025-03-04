@@ -37,7 +37,6 @@ class LoginActivity : AppCompatActivity () {
 
             if (validarCampos(email, password)) {
                 if (verificarCredenciales(email, password)) {
-                    // Redirigir al perfil
                     val intent = Intent(this, ProfileActivity::class.java)
                     startActivity(intent)
                     finish()
@@ -51,11 +50,11 @@ class LoginActivity : AppCompatActivity () {
         textRegister.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
-            finish()
         }
 
         textRcontrasena.setOnClickListener{
             val intent = Intent(this, RecoverPasswordActivity::class.java)
+            startActivity(intent)
         }
     }
 
