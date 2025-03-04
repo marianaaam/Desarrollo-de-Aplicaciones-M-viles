@@ -9,13 +9,13 @@ import androidx.appcompat.app.AppCompatActivity
 
 class ProfileActivity : AppCompatActivity() {
 
-    private lateinit var editTextNombres : EditText
-    private lateinit var editTextApellidos : EditText
+    private lateinit var editTextNombres: EditText
+    private lateinit var editTextApellidos: EditText
     private lateinit var editTextCorreo: EditText
     private lateinit var editTextTelefono: EditText
     private lateinit var buttonEditProfile: Button
 
-    private lateinit var sharedPreferences : SharedPreferences
+    private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,35 +27,40 @@ class ProfileActivity : AppCompatActivity() {
         editTextCorreo = findViewById(R.id.et_email)
         buttonEditProfile = findViewById(R.id.b_editProfile)
 
-        sharedPreferences = getSharedPreferences("user_data", MODE_PRIVATE)
+        // Inicializar SharedPreferences
+        sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE)
 
-        loadProfileData()
+        // Cargar los datos del usuario desde SharedPreferences
+        loadUserData()
+
+        // Configurar el botón para editar el perfil
         buttonEditProfile.setOnClickListener {
-            saveProfileData()
+            saveUserData()
         }
     }
 
-    private fun loadProfileData() {
-        // Recuperar los datos de SharedPreferences
+    private fun loadUserData() {
+        // Recuperar los datos del usuario desde SharedPreferences
         val nombres = sharedPreferences.getString("nombres", "")
         val apellidos = sharedPreferences.getString("apellidos", "")
         val correo = sharedPreferences.getString("correo", "")
         val telefono = sharedPreferences.getString("telefono", "")
 
-
+        // Mostrar los datos en los EditText
         editTextNombres.setText(nombres)
         editTextApellidos.setText(apellidos)
         editTextCorreo.setText(correo)
         editTextTelefono.setText(telefono)
     }
 
-    private fun saveProfileData() {
-
+    private fun saveUserData() {
+        // Obtener los valores actuales de los EditText
         val nombres = editTextNombres.text.toString()
         val apellidos = editTextApellidos.text.toString()
         val correo = editTextCorreo.text.toString()
         val telefono = editTextTelefono.text.toString()
 
+        // Guardar los datos en SharedPreferences
         val editor = sharedPreferences.edit()
         editor.putString("nombres", nombres)
         editor.putString("apellidos", apellidos)
@@ -63,6 +68,7 @@ class ProfileActivity : AppCompatActivity() {
         editor.putString("telefono", telefono)
         editor.apply()
 
-        Toast.makeText(this, "Perfil actualizado con éxito", Toast.LENGTH_SHORT).show()
+        // Mostrar un mensaje de confirmación
+        Toast.makeText(this, "Perfil actualizado", Toast.LENGTH_SHORT).show()
     }
 }
