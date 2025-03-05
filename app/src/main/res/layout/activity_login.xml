@@ -11,7 +11,7 @@
         android:layout_width="108dp"
         android:layout_height="101dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
@@ -20,14 +20,14 @@
         android:id="@+id/tv_appNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="64dp"
         android:fontFamily="serif"
         android:text="@string/app_name"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintHorizontal_bias="0.298"
         app:layout_constraintStart_toEndOf="@+id/iv_logo"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,6 +54,7 @@
         android:layout_height="49dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="24dp"
+        android:textColor="@color/black"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,6 +91,7 @@
         android:layout_height="49dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="24dp"
+        android:textColor="@color/black"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -157,6 +159,8 @@
         android:textColor="@color/turquoise"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_sinCuenta"
         app:layout_constraintTop_toBottomOf="@+id/bt_ingresarGoogle" />
 
     <TextView

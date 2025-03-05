@@ -40,8 +40,7 @@ class RecoverPasswordActivity : AppCompatActivity (){
     }
 
     private fun checkEmail(email: String): Boolean {
-        val sharedPreferences = getSharedPreferences("userData", Context.MODE_PRIVATE)
-        val savedEmail = sharedPreferences.getString("email", null)
+        val savedEmail = sharedPreferences.getString("correo", null)
         return savedEmail == email
     }
 }
